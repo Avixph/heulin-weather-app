@@ -28,7 +28,7 @@ const CurrentWeather = () => {
     <ul role="list">
       <li className=" flex flex-col text-center  rounded-lg  divide-y divide-gray-200">
         <div className="flex-1 flex flex-col p-8">
-          <h3 className="mt-6 text-gray-900 text-2xl font-medium">
+          <h3 className="mt-6 text-gray-900 text-4xl font-medium">
             {currentLocation?.name}
           </h3>
           <img
@@ -37,7 +37,7 @@ const CurrentWeather = () => {
             alt=""
           />
 
-          <h3 className="mt-6 text-gray-900 text-2xl font-medium">
+          <h3 className="mt-6 text-gray-900 text-3xl font-medium">
             {/* {currentLocation?.weather[0]?.description} */}
             {currentWeather?.weather[0]?.description}
           </h3>
@@ -47,10 +47,10 @@ const CurrentWeather = () => {
               {Math.floor(currentWeather?.main?.temp)}°
             </dd>
             <dd className="mt-3">
-              <span className="px-2 py-1 text-gray-500 text-xl font-medium ">
-                {Math.floor(currentWeather?.main?.temp_max)}°
-                {Math.floor(currentWeather?.main?.temp_min)}°
-              </span>
+              <p className="px-2 py-1 text-gray-500 text-xl font-medium ">
+                H:{Math.floor(currentWeather?.main?.temp_max)}° <span />
+                L:{Math.floor(currentWeather?.main?.temp_min)}°
+              </p>
             </dd>
           </dl>
         </div>

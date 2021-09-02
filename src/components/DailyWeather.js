@@ -28,9 +28,11 @@ const DailyWeather = () => {
           </div>
           <div className="flex-1 min-w-0">
             <span className="absolute inset-0" aria-hidden="true" />
-            <p className="text-sm font-lg text-mainBlack">{dayString}</p>
-            <p className="text-md text-gray-500 truncate">
-              {Math.floor(dayWeather?.main?.temp_max)}°/
+            <p className="text-sm font-xl text-mainBlack font-medium">
+              {dayString}
+            </p>
+            <p className="text-md text-gray-500 font-lg truncate">
+              {Math.floor(dayWeather?.main?.temp_max)}° / <span />
               {Math.floor(dayWeather?.main?.temp_min)}°
             </p>
           </div>
