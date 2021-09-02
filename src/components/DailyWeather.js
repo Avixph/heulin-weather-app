@@ -21,19 +21,19 @@ const DailyWeather = () => {
         >
           <div className="flex-shrink-0">
             <img
-              className="h-22 w-22 "
+              className="h-14 w-14 "
               src={`${weatherIconURL}${dayWeather?.weather[0]?.icon}@2x.png`}
               alt=""
             />
           </div>
           <div className="flex-1 min-w-0">
             <span className="absolute inset-0" aria-hidden="true" />
-            <p className="text-sm font-xl text-mainBlack font-medium">
+            <p className="text-sm font-lg text-mainBlack font-medium">
               {dayString}
             </p>
-            <p className="text-md text-gray-500 font-lg truncate">
-              {Math.floor(dayWeather?.main?.temp_max)}° / <span />
-              {Math.floor(dayWeather?.main?.temp_min)}°
+            <p className="text-md text-gray-500 font-md ">
+              H:{Math.floor(dayWeather?.main?.temp_max)}° <span />
+              L:{Math.floor(dayWeather?.main?.temp_min)}°
             </p>
           </div>
         </div>
