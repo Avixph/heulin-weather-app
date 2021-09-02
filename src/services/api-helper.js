@@ -1,5 +1,5 @@
 import axios from "axios";
-import { zipCodeURL, weatherURL, apiKey, zipApiKey } from "./constants";
+import { apiKey } from "./constants";
 
 // export async function fetchWeatherSearch(zipCode) {
 //   // const zipCodeAPI = `${zipCodeURL}/${zipApiKey}/info.json/${zipCode}/degrees`;

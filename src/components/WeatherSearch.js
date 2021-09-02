@@ -13,7 +13,8 @@ const WeatherSearch = () => {
     setZipCode(event.target.value);
   };
 
-  const handleSearchSubmit = () => {
+  const handleSearchSubmit = (event) => {
+    event.preventDefault();
     const field = zipCode;
     dispatch(fetchSearch(field));
     if (zipCode.length > 0) {
